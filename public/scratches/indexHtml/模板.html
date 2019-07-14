@@ -1,0 +1,93 @@
+ <html >
+ <head>
+     <meta charset="utf-8">
+     <title></title>
+ </head>
+ <style>
+            *{
+                margin: 0;
+        padding: 0;
+        }
+        img{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+
+        }
+        #box{
+            position: absolute;
+            /*left: 660px;*/
+            /*top: 250px;*/
+
+        }
+        p{
+            position: absolute;
+            left: 40px;
+            display: none;
+
+        }
+        button{
+            border-radius:100% ;
+            border: 1px solid white;
+        }
+
+
+        </style>
+        <body>
+        <div id="box">
+            <div id="yidong">
+            <button id="btn"><img src="../img/1.jpg" alt=""></button>
+            <p id="p">sdasdasdasda</p>
+            </div>
+
+            </div>
+            <script>
+        var an=false;
+        var btn=document.getElementById("btn");
+        var box=document.getElementById("box");
+        var p=document.getElementById("p");
+        console.log(box);
+
+        btn.onclick=(function () {
+            box.style.left="600px";
+            box.style.top="250px";
+            p.style.display="block";
+
+        });
+
+        btn.onclick=(function () {
+            box.style.left="0";
+            box.style.top="0";
+            p.style.display="none";
+
+        });
+
+
+
+        // btn.onclick=(function () {
+        //     box.style.left="600px";
+        //     box.style.top="250px";
+        //     p.style.display="blockon () {
+            //             box.style.left="0";
+            //             box.style.top="0";
+            //             p.style.display="none";
+            //
+            //     });
+            // });
+
+
+        // btn.onclick=(function () {
+        //
+        //     box.style.left="600px";
+        //     box.style.top="250px";
+        //     console.log(box.style.left);
+        //     btn.onclick=(function () {
+        //         box.style.left="0";
+        //         box.style.top="0";
+        //         console.log(box.style.left);
+        //     });
+        // });
+
+    </script>
+    </body>
+</html>

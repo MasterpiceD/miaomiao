@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>A</title>
+    <link rel="stylesheet" href="../indexCss/demo.css">
+<!--    <link rel="stylesheet" href="indexCss/bootstrap.css">-->
+</head>
+<body>
+
+    <h1 id="title">Survey Form</h1>
+
+    <form>
+    <div class="form-outer">
+
+        <p>Let us know how we can improve freeCodeCamp </p>
+        <div class="tab">
+            <div class="left">
+                <label>* Name: </label>
+            </div>
+
+            <div class="rigth">
+                <input type="text" required="required" class="inputtext" placeholder="Name">
+            </div>
+        </div>
+
+        <div class="tab">
+            <div class="left">
+                <label>* Email: </label>
+            </div>
+
+            <div class="rigth">
+                <input type="email" required="required" class="inputtext" id="email" placeholder="Email">
+            </div>
+        </div>
+
+        <div class="tab">
+            <div class="left">
+                <label>* Age: </label>
+            </div>
+
+            <div class="rigth">
+                <input type="number" required="required" class="inputtext" step="1" min="1" max="125" placeholder="Age">
+            </div>
+        </div>
+
+        <div class="tab">
+            <div class="left">
+                <label>Which option best describes your current role?</label>
+            </div>
+
+            <div class="rigth">
+                <select>
+                    <option disabled="" value=""></option>
+                    <option value="">Select an option</option>
+                    <option value="Student">Student</option>
+                    <option value="Job">Full Tiom Job</option>
+                    <option value="Learmer">Full Tiem Learmer</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="tap">
+            <div class="left">
+                <label>
+                    * How likely is that you would recommend freeCodeCamp to a friend?
+                </label>
+            </div>
+
+            <div class="rigth">
+                <ul style="list-style-type:none">
+                    <li><input type="radio" name="a" required="required">Definitely</li>
+                    <li><input type="radio" name="a" required="required">Maybe</li>
+                    <li><input type="radio" name="a" required="required">Not sure</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="tap">
+            <div class="left">
+                <label>
+                    Things that should be improved in the future
+                    (Check all that apply):
+                </label>
+            </div>
+
+            <div class="rigth">
+                <ul style="list-style-type:none">
+                    <li><input type="checkbox" name="b">Front-end Projects</li>
+                    <li><input type="checkbox" name="b">Back-end Projects</li>
+                    <li><input type="checkbox" name="b">Data Visualization</li>
+                    <li><input type="checkbox" name="b">Challenges</li>
+                    <li><input type="checkbox" name="b">Open Source Community</li>
+                    <li><input type="checkbox" name="b">Gitter help rooms</li>
+                    <li><input type="checkbox" name="b">Videos</li>
+                    <li><input type="checkbox" name="b">City Meetups</li>
+                    <li><input type="checkbox" name="b">Wiki</li>
+                    <li><input type="checkbox" name="b">Forum</li>
+                    <li><input type="checkbox" name="b">Additional Courses</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="tab">
+            <div class="left">
+                <label>Any Comments or Suggestions?</label>
+            </div>
+
+            <div class="rigth">
+                <textarea placeholder="he cat was playing in the garden." class="inputtext"></textarea>
+            </div>
+        </div>
+        <button>Submit</button>
+
+    </div>
+    </form>
+
+</body>
+</html>
